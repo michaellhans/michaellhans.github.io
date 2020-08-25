@@ -1,0 +1,39 @@
+header {
+  height: 50px;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: auto;
+  background-color: rgb(131, 114, 114);
+}
+
+body {
+  margin: 0px;
+}
+
+#body-title {
+  margin: 0px;
+  color: white;
+  width: 50%;
+}
+
+section {
+  margin: 30px;
+}
+
+.article-image {
+  height: 200px;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.nav {
+  width: 49%;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
