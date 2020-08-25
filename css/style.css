@@ -2,17 +2,18 @@
 
 header {
   height: 55px;
-  width: 100%;
+  width: 90%;
   padding-top: 10px;
   padding-left: 5%;
   padding-right: 5%;
   margin: 0px;
   margin-bottom: 20px;
-  background-color: rgb(131, 114, 114);
+  background-color: rgb(59, 59, 59);
 }
 
 body {
-  background: #e4e4e4;
+  background: url('../assets/theme.jpg');
+  background-size: cover !important;
   margin: 0px;
 }
 
@@ -36,6 +37,7 @@ body {
 }
 
 main {
+  min-height: 90vh;
   margin-left: 10%;
   margin-right: 10%;
   padding: 1%;
@@ -59,10 +61,6 @@ section {
   background-position: center !important;
 }
 
-.nav {
-  width: 49%;
-}
-
 footer {
   text-align: center;
   color: white;
@@ -71,11 +69,16 @@ footer {
   padding-top: 10px;
   margin: 0px;
   margin-top: 20px;
-  background-color: rgb(131, 114, 114);
+  background-color: rgb(59, 59, 59);
 }
 
-.navigation-bar {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 50% 25% 25%;
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8f9091;
+  text-decoration: none;
+  cursor: pointer;
 }
