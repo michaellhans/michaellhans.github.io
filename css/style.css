@@ -1,26 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
 header {
-  height: 50px;
+  height: 55px;
   width: 100%;
   padding-top: 10px;
   padding-left: 5%;
   padding-right: 5%;
-  margin: auto;
+  margin: 0px;
+  margin-bottom: 20px;
   background-color: rgb(131, 114, 114);
 }
 
 body {
-  margin: 0px;
   background: #e4e4e4;
+  margin: 0px;
 }
 
 #body-title {
-  margin: 0px;
-  color: white;
-  width: 50%;
+  font-family: 'Libre Baskerville', serif;
+  color: #ffffff;
+  margin: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: inline;
+}
+
+#nav-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #ffffff;
+  margin: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: inline;
+  align-self: right;
+}
+
+main {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 1%;
+  font-family: Arial;
+  border: 0px solid;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 5px 5px 20px -1px rgb(0, 0, 0, 10);
 }
 
 section {
-  margin: 30px;
+  width: 48%;
+  height: 1000px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .article-image {
@@ -33,8 +63,19 @@ section {
   width: 49%;
 }
 
-.nav li {
-  display: inline-block;
-  font-size: 20px;
-  padding: 20px;
+footer {
+  text-align: center;
+  color: white;
+  height: 55px;
+  width: 100%;
+  padding-top: 10px;
+  margin: 0px;
+  margin-top: 20px;
+  background-color: rgb(131, 114, 114);
+}
+
+.navigation-bar {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
 }
