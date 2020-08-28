@@ -1,3 +1,57 @@
+// main.js
+// Contain all script for index.html
+
+// Return an inline HTML contain table element based on array
+function makeTableHTML(arr) {
+  var result = "<table class='table-content'>";
+  for (var i = 0; i < arr.length; i++) {
+    result += '<tr>';
+    for (var j = 0; j < arr[i].length; j++) {
+      if (j == 0) {
+        result += '<td><b>' + arr[i][j] + '</b></td>';
+      } else {
+        result += '<td>' + arr[i][j] + '</td>';
+      }
+    }
+    result += '</tr>';
+  }
+  result += '</table>';
+  return result;
+}
+
+// Return an inline HTML contain paragraph element based on array
+function makeParagraphHTML(arr) {
+  var result = '';
+  for (var i = 0; i < arr.length; i++) {
+    result += "<p class='paragraph-content'>";
+    result += arr[i];
+    result += '</p>';
+  }
+  return result;
+}
+
+// Event Handler when the about button is clicked
+function aboutClicked() {
+  document.getElementById('content-detail').innerHTML = makeParagraphHTML(
+    aboutInfo
+  );
+}
+
+// Event Handler when the education button is clicked
+function educationClicked() {
+  document.getElementById('content-detail').innerHTML = makeTableHTML(
+    educationInfo
+  );
+}
+
+// Event Handler when the contact info button is clicked
+function contactClicked() {
+  document.getElementById('content-detail').innerHTML = makeTableHTML(
+    contactInfo
+  );
+}
+
+// Variable Dictionary
 var educationInfo = [
   ['TK: ', 'TK Santa Maria Fatima (2004 - 2004)'],
   ['SD: ', 'SD Santa Maria Fatima (2006 - 2012)'],
@@ -24,49 +78,5 @@ var aboutInfo = [
   ],
 ];
 
-function makeTableHTML(myArray) {
-  var result = "<table class='table-content'>";
-  for (var i = 0; i < myArray.length; i++) {
-    result += '<tr>';
-    for (var j = 0; j < myArray[i].length; j++) {
-      if (j == 0) {
-        result += '<td><b>' + myArray[i][j] + '</b></td>';
-      } else {
-        result += '<td>' + myArray[i][j] + '</td>';
-      }
-    }
-    result += '</tr>';
-  }
-  result += '</table>';
-  return result;
-}
-
-function makeParagraphHTML(myArray) {
-  var result = '';
-  for (var i = 0; i < myArray.length; i++) {
-    result += "<p class='paragraph-content'>";
-    result += myArray[i];
-    result += '</p>';
-  }
-  return result;
-}
-
-function aboutClicked() {
-  document.getElementById('content-detail').innerHTML = makeParagraphHTML(
-    aboutInfo
-  );
-}
-
-function educationClicked() {
-  document.getElementById('content-detail').innerHTML = makeTableHTML(
-    educationInfo
-  );
-}
-
-function contactClicked() {
-  document.getElementById('content-detail').innerHTML = makeTableHTML(
-    contactInfo
-  );
-}
-
+// Initial Script
 aboutClicked();
