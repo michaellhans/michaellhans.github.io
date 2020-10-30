@@ -65,8 +65,8 @@ main {
   background: url('../img/profile.jpg');
   background-position: center;
   background-size: cover;
-  width: 300px;
-  height: 300px;
+  max-width: 300px;
+  max-height: 300px;
   margin: auto;
   border: 0px solid black;
   border-radius: 50%;
