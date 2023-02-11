@@ -7,10 +7,9 @@ body {
   line-height: 24px;
 }
 
-header {
-  width: 80%;
-  padding: 0% 10% 0% 10%;
-  height: 8%;
+.header {
+  width: 100%;
+  padding: 0.5% 10%;
   background-color: rgb(3, 85, 179);
   color: white;
 }
@@ -19,10 +18,14 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 1.5% 12px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   width: 100%;
   margin: auto;
+}
+
+.navbar-toggler {
+  color: white;
 }
 
 nav a {
@@ -36,14 +39,14 @@ nav a:hover {
 }
 
 main {
-  width: 80%;
+  width: 100%;
   padding: 2% 10%;
   min-height: 90vh;
   background-color: rgb(234, 243, 255);
 }
 
 #my-project {
-  padding: 5% 5%;
+  padding: 5% 0%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -54,7 +57,6 @@ main {
 }
 
 .profile {
-  width: 70%;
   padding: 5% 15%;
   text-align: center;
   align-items: center;
@@ -92,7 +94,7 @@ main {
 }
 
 .left-info {
-  padding: 5% 5% 5% 5%;
+  padding: 5%;
   background-color: rgb(247, 242, 242);
   display: flex;
   flex-wrap: wrap;
@@ -121,7 +123,7 @@ main {
   color: black;
   font-size: 24px;
   font-weight: bold;
-  margin-top: 24px;
+  margin: 24px 0px;
 }
 .info-description {
   color: black;
@@ -131,11 +133,10 @@ main {
 }
 
 .card {
-  width: 450px;
+  width: 46%;
   padding: 25px;
   min-height: 250px;
-  margin-right: 16px;
-  margin-bottom: 30px;
+  margin: 2%;
   background-color: #fff;
   border: 2px solid rgb(23, 8, 160);
   border-radius: 10px;
@@ -143,11 +144,14 @@ main {
   transition: box-shadow 300ms;
 }
 
-.card:hover {
-  box-shadow: 5px 5px 20px 10px rgb(0, 0, 0, 0.5);
+@media(max-width: 800px){ 
+  .card {
+    width: 100%;
+  }
 }
 
-.card-image {
+.card:hover {
+  box-shadow: 5px 5px 20px 10px rgb(0, 0, 0, 0.5);
 }
 
 .card-title {
